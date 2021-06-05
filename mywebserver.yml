@@ -2,12 +2,14 @@
 - hosts: all
   become: yes
   tasks:
-  - name:  i want to install webserver on ubuntu node
+  - name:  i want to install webserver on ubuntu node only
     apt:
        name: apache2
        state: present
+    when: ansible_os_family =="Debian"
        
-  - name:  i want to start webserver on ubuntu node
+  - name:  i want to start webserver on ubuntu node only 
     service:
       name: apache2
       state: restarted
+    when: ansible_os_family=="Debian"
