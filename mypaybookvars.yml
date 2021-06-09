@@ -5,12 +5,11 @@
     myvar1: git
     myvar2: tree
     myvar3: wget
-    myjavaonubuntu: gitii
   tasks:
   - name: display vars1
     debug:
       msg: "{{myvar1}}"
-  - name: install myjavaonubuntu
+  - name: install git
     apt:
-      name: "{{myjavaonubuntu}}"
+      name: "{{myvar1}}"
       state: present
