@@ -11,9 +11,10 @@
   - name: install tree task2
     apt:
       name: tree
-      stateee: present
-    tags: mytree
+      state: present
     ignore_errors: yes
+    tags: mytree
+   
 
   - name: install wget task3
     apt:
