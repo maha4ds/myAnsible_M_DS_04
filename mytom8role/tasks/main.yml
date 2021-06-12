@@ -2,7 +2,7 @@
 # tasks file for mytom8role
 - include_tasks: installjava.yml
 - include_tasks: createusergroup.yml
-- include_tasks: installtomcat.
+- include_tasks: installtomcat.yml
 - include_tasks: installtomcat.yml
 - include_tasks: UpdatePermissions.yml
 - include_tasks: tomcatServiceFile.yml
